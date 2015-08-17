@@ -1,0 +1,16 @@
+[Unit]
+Description=Execute various xset commands prior to wmii on display %i
+Requires=xorg@%i.target
+After=xorg@%i.target
+Before=wmii@%i.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:%i
+ExecStart=/usr/bin/xset -b
+ExecStart=/usr/bin/xset +fp /usr/share/fonts/local
+ExecStart=/usr/bin/xset fp rehash
+
+[Install]
+WantedBy=default.target

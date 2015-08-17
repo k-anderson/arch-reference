@@ -1,0 +1,13 @@
+--- /etc/ssh/ssh_config.org 2015-08-16 23:08:42.972600742 -0700
++++ /etc/ssh/ssh_config	2015-08-16 23:09:19.987765110 -0700
+@@ -17,6 +17,10 @@
+ # list of available options, their meanings and defaults, please see the
+ # ssh_config(5) man page.
+ 
++HashKnownHosts        yes
++ServerAliveInterval   60
++TCPKeepAlive          yes
++
+ # Host *
+ #   ForwardAgent no
+ #   ForwardX11 no

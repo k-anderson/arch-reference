@@ -1,0 +1,15 @@
+[Unit]
+Description=Reads the Xresource file from the home user into the xrdb for display %i
+Requires=xorg@%i.service
+After=xorg@%i.service
+Before=wmii@%i.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:%i
+ExecStart=/usr/bin/xrdb %h/.Xresources
+
+[Install]
+WantedBy=default.target
+

@@ -1,0 +1,15 @@
+[Unit]
+Description=WMII running on display %i
+After=xorg@%i.service
+Requires=xorg@%i.service
+
+[Service]
+EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:%i
+ExecStart=/usr/bin/wmii
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+

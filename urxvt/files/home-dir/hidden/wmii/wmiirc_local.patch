@@ -1,0 +1,10 @@
+--- /home/kanderson/arch-reference/wmii/files/home-dir/hidden/wmii/wmiirc_local	2015-08-16 23:27:41.514916678 -0700
++++ /home/kanderson/.wmii/wmiirc_local	2015-08-16 21:32:20.883333333 -0700
+@@ -5,6 +5,7 @@
+ export WMII_URGENTCOLORS='#333333 #dea61c #dea61c'
+ export WMII_BARCOLORS='#333333 #a7afc8 #3d3d3d'
+ export WMII_FONT='xft:DejaVu Sans Mono:pixelsize=9'
++export WMII_TERM="urxvt"
+ 
+ fNet() {
+   interface=$(ip route list | grep default | sed -r 's|.*dev (\w*) .*|\1|g')

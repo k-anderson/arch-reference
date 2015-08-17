@@ -1,0 +1,6 @@
+xorg-server
+xf86-video-vesa
+xterm
+xorg-xinit
+xorg-xrdb
+ttf-dejavu

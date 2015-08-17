@@ -1,0 +1,10 @@
+[Unit]
+Description=Virtual box client service for %i
+
+[Service]
+EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/VBoxClient -d --%i
+
+[Install]
+WantedBy=default.target
