@@ -1,0 +1,7 @@
+- Find device UUIDs with: blkid
+- gptfdisk is only required if using GPT partition tables
+- Create localtime: ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+- echo "LANG="en_US.UTF-8" > /etc/locale.conf; sed -i "s|# en_US.UTF-8|en_US.UTF-8|g" /etc/locale.gen; locale-gen
+- mkinitcpio -p linux
+- syslinux-install_update -iam
+- useradd -m -G wheel -g users -s /bin/bash kanderson

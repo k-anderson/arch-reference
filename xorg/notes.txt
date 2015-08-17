@@ -1,0 +1,30 @@
+- Dualscreen for desktop:
+/etc/X11/xorg.conf.d/10-displayz.conf
+----------------------------------------------
+Section "ServerFlags"
+	Option	"RandR"	"on"
+EndSection
+
+Section "Device"
+	Identifier "HD6800"
+	Driver	"radeon"
+	Option	"Monitor-DVI-0"	"Monitor0"
+	Option	"Monitor-DVI-1"	"Monitor1"
+EndSection
+
+Section "Monitor"
+	Identifier	"Monitor0"
+EndSection
+
+Section "Monitor"
+	Identifier	"Monitor1"
+	Option	"RightOf"	"Monitor0"
+EndSection
+
+Section "Screen"
+	Identifier	"Screen"
+	Device	"HD6800"
+	Monitor	"Monitor0"
+	Monitor	"Monitor1"
+EndSection
+----------------------------------------------

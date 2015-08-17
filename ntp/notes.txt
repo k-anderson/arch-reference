@@ -1,0 +1,2 @@
+- One liner:
+    pacman -S ntp; ntpdate time.nist.gov; systemctl enable ntpd; systemctl start ntpd
