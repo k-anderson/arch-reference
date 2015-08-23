@@ -30,4 +30,5 @@ More to come as I go ;)
 * Add iptable customizations to this repo
 * Add dnsmasq customizations to this repo (https://wiki.archlinux.org/index.php/Systemd-networkd)
 * Console improvements? (https://wiki.archlinux.org/index.php/General_recommendations)
-* Num lock on boot (https://wiki.archlinux.org/index.php/Activating_Numlock_on_Bootup)  
+* Num lock on boot (https://wiki.archlinux.org/index.php/Activating_Numlock_on_Bootup)
+*  Overkill? hmmm, https://blog.jessfraz.com/post/docker-containers-on-the-desktop/
